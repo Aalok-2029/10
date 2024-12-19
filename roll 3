@@ -1,6 +1,4 @@
-// WAP to enter name, roll, marks of 3 subject.Display all information whose roll is 3 (no.of student is 12)
 #include <stdio.h>
-#include <string.h>
 int main()
 {
     char names[100] [20];
