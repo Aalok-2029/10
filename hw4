@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+    char n[3][30];
+    float r[3],q[3],t,d;
+    int i;
+    for(i=0;i<2;i++)
+    {
+        printf("Enter Product name :");
+        scanf("%s",n[i]);
+        printf("Enter rate :");
+        scanf("%f",&r[i]);
+        printf("Enter qunatity:");
+        scanf("%f",&q[i]);
+    }
+    printf("Name\t Rate\t Quantity\t Total\t Discount amount\n ");
+    for(i=0;i<2;i++)
+    {
+        t=r[i]*q[i];
+       if(t>=2000)
+       {
+           d = t -(t * 10)/100.0;
+        printf("%s\t %f\t %f\t %f\t %f\n",n[i],r[i],q[i],t,d);
+       }
+       else 
+       {
+           printf("%s\t %f\t %f\t %f\n",n[i],r[i],q[i],t);
+       }
+    }
+}
