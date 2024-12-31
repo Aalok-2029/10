@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+    float cp[3],sp[3],p,l;
+    int i;
+    for(i=0;i<2;i++)
+    {
+        printf("Enter cost pirce :");
+        scanf("%f",&cp[i]);
+        printf("Enter selling price:");
+        scanf("%f",&sp[i]);
+    }
+    printf("cost price\t Selling price\t profit\t loss\n ");
+    for(i=0;i<2;i++)
+    {
+       if(sp[i]>cp[i])
+       {
+           p=sp[i]-cp[i];
+        printf("%f\t %f\t %f\n",cp[i],sp[i],p);
+       }
+       else if (cp>sp)
+       {
+            l=cp[i]-sp[i];
+        printf("%f\t %f\t %f\n",cp[i],sp[i],l);
+       }
+       else 
+       {
+        printf("%f\t %f\t %f\n",cp[i],sp[i]);
+       }
+    }
+}
