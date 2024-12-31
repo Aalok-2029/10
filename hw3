@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+    char n[3][30];
+    char a[3][20];
+    int ag[3],s[3],i;
+    for(i=0;i<2;i++)
+    {
+        printf("Enter Name :");
+        scanf("%s",n[i]);
+        printf("Enter Address :");
+        scanf("%s",a[i]);
+        printf("Enter age :");
+        scanf("%d",&ag[i]);
+        printf("Enter salary :");
+        scanf("%d",&s[i]);
+    }
+    printf("Name\tAddress\tAge\tSalary\n ");
+    for(i=0;i<2;i++)
+    {
+       if(ag[i]>=25 && s[i]>=80000 && s[i]<=100000)
+       {
+        printf("%s\t %s\t %d\t %d\n",n[i],a[i],ag[i],s[i]);
+       }
+    }
+}
