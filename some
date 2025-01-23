@@ -33,3 +33,32 @@ int main()
         {
             printf("%d x %d = %d",n,i,n*i);
         }
+// reverse of number
+  #include<stdio.h>
+ int main()
+    {
+        int n,o,r,R=0;
+        printf("Enter a number : ");
+        scanf("%d",&n);
+        o=n;
+        while(n>0)
+            {
+                r=n%10;
+                R=R*10+r;
+                n=n/10;
+            }
+            printf("Reverse of %d is %d",o,R);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
